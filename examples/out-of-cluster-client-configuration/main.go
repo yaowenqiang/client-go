@@ -66,6 +66,10 @@ func main() {
 			panic(err.Error())
 		}
 		fmt.Printf("There are %d pods in the cluster\n", len(pods.Items))
+		fmt.Printf("There are %d pods in the cluster\n", len(pods.Items))
+		fmt.Printf("first pod  is %+v \n", pods.Items[0])
+		fmt.Printf("first pod name is %s \n", pods.Items[0].ObjectMeta.Name)
+
 
 		// Examples for error handling:
 		// - Use helper functions like e.g. errors.IsNotFound()
